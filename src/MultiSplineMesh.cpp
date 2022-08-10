@@ -31,7 +31,20 @@ void AMultiSplineMesh::BeginPlay()
 void AMultiSplineMesh::ConstructMeshes()
 {
 	float SplineLength = SplineComponent->GetSplineLength();
-	float LengthPerMesh = SplineMesh->GetBoundingBox().GetSize().X;
+	float LengthPerMesh;
+	switch (ForwardAxis)
+	{
+		default:
+		case ESplineMeshAxis::Type::X:
+			LengthPerMesh = SplineMesh->GetBoundingBox().GetSize().X;
+			break;
+		case ESplineMeshAxis::Type::Y:
+			LengthPerMesh = SplineMesh->GetBoundingBox().GetSize().Y;
+			break;
+		case ESplineMeshAxis::Type::Z:
+			LengthPerMesh = SplineMesh->GetBoundingBox().GetSize().Z;
+			break;
+	}
 
 	GeneratedMeshes.Empty();
 	TArray<USceneComponent*> ChildrenComponents;
