@@ -6,3 +6,5 @@ C++ construction script to lay multiple spline meshes along a long spline. This 
 
 Create a blueprint based on MultiSplineMesh and assign a mesh. Then edit it like a normal spline and it will construct SplineMeshes along it.
 
+You can also use the properties under "Spawn Item Along Spline" to spawn things along the spline at intervals, such as pickups.
+
