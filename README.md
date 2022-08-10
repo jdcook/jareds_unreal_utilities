@@ -1,4 +1,4 @@
-# Jareds Unreal Utilities
+# Jared's Unreal Utilities
 A collection of helpful UE utilities
 
 ## Multi Spline Mesh
