@@ -1,5 +1,5 @@
 ## Multi Spline Mesh
-C++ construction script to lay multiple spline meshes along a long spline. This allows you to make things like racing game loops and corkscrews easily, or lay out aesthetic-only repeatable meshes.
+C++ construction script to lay multiple spline meshes along a long spline. This allows you to make things like racing game loops and corkscrews easily, or lay out decorative repeatable meshes along a spline.
 
 Create a blueprint based on MultiSplineMesh and assign a mesh. Then edit it like a normal spline and it will construct SplineMeshes along it.
 
